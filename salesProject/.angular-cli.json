@@ -25,8 +25,19 @@
         "assets/AutoHintTheme/js/plugins/magnific/magnific-popup.css",
         "assets/AutoHintTheme/js/plugins/c3charts/c3.min.css",
         "assets/AutoHintTheme/skin/default_skin/css/theme.css",
-        "assets/AutoHintTheme/allcp/forms/css/forms.css"
-    
+        "assets/AutoHintTheme/allcp/forms/css/forms.css",
+
+        "assets/AutoHintTheme/new/css/bootstrap-editable.min.css",
+        "assets/AutoHintTheme/new/css/bootstrap.min.css",
+        "assets/AutoHintTheme/new/font-awesome/4.5.0/css/font-awesome.min.css",
+        "assets/AutoHintTheme/new/css/jquery-ui.custom.min.css",
+        "assets/AutoHintTheme/new/css/jquery.gritter.min.css",
+        "assets/AutoHintTheme/new/css/select2.min.css",
+        "assets/AutoHintTheme/new/css/bootstrap-datepicker3.min.css",
+        "assets/AutoHintTheme/new/css/fonts.googleapis.com.css",
+        "assets/AutoHintTheme/new/css/ace-skins.min.css",
+        "assets/AutoHintTheme/new/css/ace-rtl.min.css"
+        
       ],
       "scripts": [
         "assets/AutoHintTheme/js/jquery/jquery-1.11.3.min.js",
@@ -47,7 +58,22 @@
         "assets/AutoHintTheme/js/main.js",
         "assets/AutoHintTheme/js/demo/widgets.js",
         "assets/AutoHintTheme/js/demo/widgets_sidebar.js",
-        "assets/AutoHintTheme/js/pages/dashboard1.js"
+        "assets/AutoHintTheme/js/pages/dashboard1.js",
+
+        "assets/AutoHintTheme/new/js/ace-extra.min.js",
+        "assets/AutoHintTheme/new/js/jquery-ui.custom.min.js",
+        "assets/AutoHintTheme/new/js/jquery.ui.touch-punch.min.js",
+        "assets/AutoHintTheme/new/js/jquery.gritter.min.js",
+        "assets/AutoHintTheme/new/js/bootbox.js",
+        "assets/AutoHintTheme/new/js/jquery.easypiechart.min.js",
+        "assets/AutoHintTheme/new/js/bootstrap-datepicker.min.js",
+        "assets/AutoHintTheme/new/js/jquery.hotkeys.index.min.js",
+        "assets/AutoHintTheme/new/js/bootstrap-wysiwyg.min.js",
+        "assets/AutoHintTheme/new/js/select2.min.js",
+        "assets/AutoHintTheme/new/js/spinbox.min.js",
+        "assets/AutoHintTheme/new/js/bootstrap-editable.min.js",
+        "assets/AutoHintTheme/new/js/ace-editable.min.js",
+        "assets/AutoHintTheme/new/js/jquery.maskedinput.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
