@@ -10,6 +10,7 @@ import { loginService } from './login/login.service';
 import { HttpModule } from '@angular/http';
 import { UserListComponent } from './home/user/user-list.component';
 import { UserService } from './home/user/user.service';
+import { CookieService } from 'ngx-cookie-service';
 
 const router: Routes = [
   { path: '', redirectTo: 'main', pathMatch: 'full' },
@@ -35,7 +36,7 @@ const router: Routes = [
     FormsModule,
     HttpModule
   ],
-  providers: [ApiService,loginService,UserService],
+  providers: [ApiService,loginService,UserService,CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

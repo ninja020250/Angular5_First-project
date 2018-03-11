@@ -18,9 +18,7 @@ password:string;
   login(){
     this.loginService.login(this.username,this.password).then(()=>{
       this.router.navigate(["/main"]);
-    })
-    alert(this.username);
-    alert(this.password);
+    });
   }
 
 }

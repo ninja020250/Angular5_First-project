@@ -12,8 +12,10 @@ export class HomeComponent implements OnInit {
 
 
   ngOnInit() {
+    Core.init();
   }
   ngAfterViewInit() {
+  
     Core.init();
   }
  
