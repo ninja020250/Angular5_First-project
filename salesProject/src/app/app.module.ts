@@ -10,14 +10,16 @@ import { loginService } from './login/login.service';
 import { HttpModule } from '@angular/http';
 import { UserListComponent } from './home/user/user-list.component';
 import { UserService } from './home/user/user.service';
+import { CookieService } from 'ngx-cookie-service';
+import { UserDetailComponent } from './home/user/user-detail.component';
 
 const router: Routes = [
   { path: '', redirectTo: 'main', pathMatch: 'full' },
   {
     path: 'main', component: HomeComponent, children: [
       {path: '', redirectTo:"user-list", pathMatch: 'full'},
-      {path: 'user-list', component:UserListComponent}
-
+      {path: 'user-list', component:UserListComponent},
+      {path: 'user-detail/:id', component:UserDetailComponent}
     ]
   },
   { path: 'login',component:LoginComponent, pathMatch: 'full' },
@@ -27,7 +29,9 @@ const router: Routes = [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    UserListComponent
+    UserListComponent,
+    UserDetailComponent
+
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,7 @@ const router: Routes = [
     FormsModule,
     HttpModule
   ],
-  providers: [ApiService,loginService,UserService],
+  providers: [ApiService,loginService,UserService,CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
