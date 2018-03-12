@@ -21,6 +21,10 @@ export class UserListComponent implements OnInit {
    this.router.navigate(["/main/user-detail", user.Id]);
  }
  create(){
+<<<<<<< HEAD
    this.router.navigate(["/main/user-detail",0]);
+=======
+   this.router.navigate(["/main/user-detail", 0]);
+>>>>>>> a61cbf0f82e2b30a76230a5443fa3e0d0a59c0ee
  }
 }

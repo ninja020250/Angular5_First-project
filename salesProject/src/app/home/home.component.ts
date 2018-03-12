@@ -12,8 +12,10 @@ export class HomeComponent implements OnInit {
 
 
   ngOnInit() {
+    Core.init();
   }
   ngAfterViewInit() {
+<<<<<<< HEAD
     $.getScript(  "assets/AutoHintTheme/js/utility/utility.js", function( data, textStatus, jqxhr ) {
       $.getScript( "assets/AutoHintTheme/js/demo/demo.js", function( data, textStatus, jqxhr ) {
         $.getScript( "assets/AutoHintTheme/js/main.js", function( data, textStatus, jqxhr ) {
@@ -21,6 +23,10 @@ export class HomeComponent implements OnInit {
         });
       });
     });
+=======
+  
+    Core.init();
+>>>>>>> a61cbf0f82e2b30a76230a5443fa3e0d0a59c0ee
   }
  
 }

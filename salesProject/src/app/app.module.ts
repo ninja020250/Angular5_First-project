@@ -20,6 +20,10 @@ const router: Routes = [
       {path: '', redirectTo:"user-list", pathMatch: 'full'},
       {path: 'user-list', component:UserListComponent},
       {path: 'user-detail/:id', component:UserDetailComponent}
+<<<<<<< HEAD
+=======
+    
+>>>>>>> a61cbf0f82e2b30a76230a5443fa3e0d0a59c0ee
     ]
   },
   { path: 'login',component:LoginComponent, pathMatch: 'full' },
@@ -31,7 +35,10 @@ const router: Routes = [
     LoginComponent,
     UserListComponent,
     UserDetailComponent
+<<<<<<< HEAD
 
+=======
+>>>>>>> a61cbf0f82e2b30a76230a5443fa3e0d0a59c0ee
   ],
   imports: [
     BrowserModule,
