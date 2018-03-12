@@ -30,6 +30,10 @@ export class UserService {
             });
         });
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1ee6bffba00b4415f014792dac44aa45bb8a703d
     saveUser(user){
         return new Promise((resolve,reject)=>{
             this.apiService.post('/api/saveCustomer/',user).then(res=>{
