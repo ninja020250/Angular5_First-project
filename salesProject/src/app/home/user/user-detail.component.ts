@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from './user.service';
 import { Router,ActivatedRoute } from '@angular/router';
+import { NotificationService } from '../../loadingService/notification.service';
+import { LoadingService } from '../../loadingService/loading.service';
 
 
 @Component({
@@ -12,7 +14,8 @@ export class UserDetailComponent implements OnInit {
   routerSubscription:any;
   id:number;
   user:any={};
-  constructor(private router:Router, private userService:UserService,private activatedRoute:ActivatedRoute) { }
+  constructor(private router:Router, private userService:UserService,private activatedRoute:ActivatedRoute, 
+    private notificationService:NotificationService, private loadingService:LoadingService) { }
 
   ngOnInit() {
     this.routerSubscription = this.activatedRoute.params.subscribe(params=>{
@@ -26,12 +29,18 @@ export class UserDetailComponent implements OnInit {
     });
     }
     ngOnDestroy(){
-      this.routerSubscription.unsubcribes(); 
+      this.routerSubscription.unsubcribes; 
     }
     save(user){
+      this.loadingService.start();
       this.userService.saveUser(this.user).then((res:any)=>{
         if(this.id === 0)this.router.navigate(["/main/user-detail",res.Id]);
+        this.loadingService.stop();
+        this.notificationService.success('save success');
+      }).catch(err=>{
+        this.loadingService.stop();
+        this.notificationService.error('save failed!');
       })
     }
-
+  
 }

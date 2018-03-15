@@ -12,6 +12,8 @@ import { UserListComponent } from './home/user/user-list.component';
 import { UserService } from './home/user/user.service';
 import { CookieService } from 'ngx-cookie-service';
 import { UserDetailComponent } from './home/user/user-detail.component';
+import { LoadingService } from './loadingService/loading.service';
+import { NotificationService } from './loadingService/notification.service';
 
 const router: Routes = [
   { path: '', redirectTo: 'main', pathMatch: 'full' },
@@ -38,7 +40,7 @@ const router: Routes = [
     FormsModule,
     HttpModule
   ],
-  providers: [ApiService,loginService,UserService,CookieService],
+  providers: [ApiService,loginService,UserService,CookieService, LoadingService, NotificationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
